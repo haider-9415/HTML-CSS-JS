@@ -1,0 +1,89 @@
+/** ------------------------------------- -->
+/** CSS LIST STYLING 
+/** ---------------------------------------- --> */
+
+/*? In HTML, there are two main types of lists:
+unordered lists (<ul>) - the list items are marked with bullets
+ordered lists (<ol>) - the list items are marked with numbers or letters */
+
+/*? The list-style-type property specifies the type of list item marker. */
+
+/*? The list-style-image property specifies an image as the list item marker: */
+
+/*? The list-style-position property specifies the position of the list-item markers (bullet points). */
+
+/*? The list-style property is a shorthand property. It is used to set all the list properties in one declaration: */
+
+/* ul {
+  list-style: circle inside url("");
+} */
+
+/** ---------------------------------------- --> */
+
+html {
+  font-family: "Urbanist";
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #5b697a 0%, #5b697a 50%),
+    linear-gradient(to bottom, #fafbfd 0%, #fafbfd 50%);
+  background-size: 100% 50%, 100% 50%;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+}
+
+.lists {
+  width: 500px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+ul {
+  /* list-style-type */
+  /* Partial list of types */
+  list-style-type: disc;
+  list-style-type: circle;
+  list-style-type: square;
+  list-style-type: decimal;
+  list-style-type: georgian;
+  list-style-type: trad-chinese-informal;
+  list-style-type: kannada;
+  list-style-type: armenian;
+  list-style-type: lower-roman;
+  list-style-type: upper-roman;
+  list-style-type: lower-alpha;
+  list-style-type: upper-alpha;
+  /* <string> value */
+  list-style-type: "-";
+  list-style-type: "->";
+  list-style-type: "~";
+  list-style-type: "👉";
+  /* Keyword value */
+  /* list-style-type: none; */
+
+  /* list-style-position */
+  list-style-position: outside;
+  list-style-position: inside;
+
+  /* list-style-image */
+  list-style-image: url("../images/arrow-96.png");
+
+  /* we can set in single line */
+  list-style: inside url("../images/arrow-64.png");
+  list-style: "👉" outside;
+}
+
+li {
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+  border: 2px solid #ed5656;
+}
+
+/* I will show the same during pseudo elements  */

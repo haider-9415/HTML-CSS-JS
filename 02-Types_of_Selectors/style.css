@@ -1,0 +1,31 @@
+/* element selector */
+body {
+  background: wheat;
+}
+h1 {
+  color: purple;
+  font-family: sans-serif;
+}
+
+/* class selector */
+.para {
+  color: rgb(167, 45, 167);
+  font-family: cursive;
+  font-size: x-large;
+}
+
+/* id selector */
+#btn {
+  color: rgb(167, 45, 167);
+  text-decoration: none;
+  border: 2px solid purple;
+  padding: 6px;
+  border-radius: 40px;
+  font-family: sans-serif;
+}
+
+#btn:hover {
+  background: rgb(167, 45, 167);
+  color: wheat;
+  border: none;
+}

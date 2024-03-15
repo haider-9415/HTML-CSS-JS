@@ -1,0 +1,84 @@
+/** ------------------------------------- -->
+/**  RADIAL GRADIENTS
+/** ---------------------------------------- --> */
+
+/*? The radial-gradient() function sets a radial gradient as the background image.
+
+A radial gradient is defined by its center.
+
+To create a radial gradient you must define at least two color stops. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+
+  background: radial-gradient(#e66465, #9198e5);
+
+  background: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c);
+
+  background-image: radial-gradient(circle, red 20%, yellow 40%, blue 40%);
+
+  background-image: radial-gradient(circle, red 20%, yellow 40%, blue 100%);
+
+  background-image: repeating-radial-gradient(#ff5733, #ffc300, #a8df8e 250px);
+
+  background: radial-gradient(
+    circle at center,
+    #ff5733 0%,
+    #ffc300 20%,
+    #ff5733 40%,
+    #2980b9 60%,
+    #33ff57 80%,
+    #2980b9 100%
+  );
+
+  background: radial-gradient(
+    circle at 100%,
+    #333,
+    #333 50%,
+    #eee 75%,
+    #333 75%
+  );
+
+  background: radial-gradient(ellipse at top, #e66465, transparent),
+    radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+
+  background: radial-gradient(
+    circle at 150%,
+    rgba(5, 25, 55, 0.9),
+    rgba(0, 77, 122, 0.9),
+    rgba(0, 135, 147, 0.9),
+    rgba(0, 191, 114, 0.9),
+    rgba(168, 235, 18, 0.9)
+  );
+}
+
+/*? Differently Spaced Color Stops */
+/* background-image: radial-gradient(red 30%, yellow 60%, green 10%); */
+
+/*? Set the Shape */
+/* The shape parameter defines the shape. It can take the value circle or ellipse. The default value is ellipse. */
+
+/**-----------------------
+/** Interview Question  
+/** ----------------------- */
+
+/*? 1: create a repeating radial gradient in CSS? */
+/* background-image: repeating-radial-gradient(#ff5733, #ffc300 , #A8DF8E ); */
+
+/*? 2: Create a CSS-only radial gradient that creates a circular pattern of colors with smooth transitions between them. */
+/* background: radial-gradient(
+    circle at center,
+    #ff5733 0%,
+    #ffc300 20%,
+    #ff5733 40%,
+    #2980b9 60%,
+    #33ff57 80%,
+    #2980b9 100%
+  ); */
