@@ -1,0 +1,221 @@
+<!-- *------------------------------------- -->
+<!--*  HTML LIST - ORDER VS UNORDERED TAG  
+<!-- *---------------------------------------- -->
+
+<!-- 
+  
+?Unordered List (<ul>) Example:  An unordered list is used to create a list of items that are not in any particular order. Each list item is marked with a bullet point.
+
+  
+Unordered List (<ul>) Styles:
+
+  Disc (list-style-type: disc;): Default style - filled circles.
+  Circle (list-style-type: circle;): Hollow circles.
+  Square (list-style-type: square;): Squares.
+  None (list-style-type: none;): No bullet points.
+
+      
+    
+Ordered List (<ol>) Example:
+   An ordered list is used to create a list of items in a specific order, typically indicated by numbers.
+
+
+Ordered List (<ol>) Styles:
+
+  Decimal (list-style-type: decimal;): Default style - decimal numbers.
+  Lowercase Letters (list-style-type: lower-alpha;): Lowercase letters (a, b, c).
+  Uppercase Letters (list-style-type: upper-alpha;): Uppercase letters (A, B, C).
+  Lowercase Roman Numerals (list-style-type: lower-roman;): Lowercase Roman numerals (i, ii, iii).
+  Uppercase Roman Numerals (list-style-type: upper-roman;): Uppercase Roman numerals (I, II, III) 
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Tag</title>
+  </head>
+  <body>
+    <h1>Unordered List</h1>
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ul>
+    <ul style="list-style-type: circle">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ul>
+    <ul style="list-style-type: square">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ul>
+    <ul style="list-style-type: none">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ul>
+    <br />
+    <hr />
+    <br />
+
+    <h1>Ordered List</h1>
+    <ol>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ol>
+    <ol style="list-style-type: decimal-leading-zero">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ol>
+    <ol style="list-style-type: lower-alpha">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ol>
+    <ol style="list-style-type: upper-alpha">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ol>
+    <ol style="list-style-type: lower-latin">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ol>
+    <ol style="list-style-type: upper-latin">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ol>
+    <ol style="list-style-type: lower-roman">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ol>
+    <ol style="list-style-type: upper-roman">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ol>
+    <ol style="list-style-type: lower-greek">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ol>
+
+    <br />
+    <hr />
+    <br />
+
+    <h1>Using type attribute</h1>
+    <ol type="a">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ol>
+    <ol type="A">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ol>
+    <ol type="i">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ol>
+    <ol type="I">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ol>
+    <ul type="square">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ul>
+    <ul type="circle">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ul>
+
+    <br />
+    <hr />
+    <br />
+    <h1>using start attribute</h1>
+    <ol type="1" start="7">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ol>
+
+    <br />
+    <hr />
+    <br />
+    <h1>Nested List</h1>
+    <ul>
+      <li>
+        fruit
+        <ol>
+          <li>
+            Banana
+            <ul>
+              <li>green</li>
+              <li>yellow</li>
+            </ul>
+          </li>
+          <li>apple</li>
+        </ol>
+      </li>
+      <li>
+        vegitables
+        <ul>
+          <li>tomato</li>
+          <li>onion</li>
+          <li>cucumber</li>
+        </ul>
+      </li>
+      <li>
+        meta
+        <ul type="square">
+          <li>goat</li>
+          <li>chicken</li>
+        </ul>
+      </li>
+    </ul>
+
+    <br />
+    <hr />
+    <br />
+
+    <h1>Nav Bar</h1>
+    <ul style="list-style-type: none; display: flex; gap: 15px">
+      <li>Home</li>
+      <li>About</li>
+      <li>Service</li>
+      <li>Contact</li>
+    </ul>
+  </body>
+</html>
+<!-- *------------------------------------- -->
+<!--* INTERVIEW Q:  HTML LIST 
+<!-- *---------------------------------------- -->
+
+<!--? 1: What is the significance of the type attribute in ordered lists? -->
+<!-- Decimal Numbers (type="1"): This is the default style. It uses regular decimal numbers. 
+  Uppercase Letters (type="A"): It uses uppercase letters (A, B, C) as list item numbers.
+Lowercase Letters (type="a"): It uses lowercase letters (a, b, c) as list item numbers.
+Uppercase Roman Numerals (type="I"): It uses uppercase Roman numerals (I, II, III) as list item numbers.
+Lowercase Roman Numerals (type="i"): It uses lowercase Roman numerals (i, ii, iii) as list item numbers. -->
+
+<!--? 2: What is the use of the start attribute in ordered lists? -->
+
+<!--? 3: Explain the concept of nested lists  -->
+
+<!--? 4: How do you create a horizontal navigation menu using an unordered list? -->

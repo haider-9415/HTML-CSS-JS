@@ -1,0 +1,118 @@
+<!-- *------------------------------------- -->
+<!--* HTML IMAGE TAG  
+<!-- *---------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Tag</title>
+  </head>
+  <body>
+    <img
+      src="../images/html.png"
+      alt="html course thumbnail"
+      width="800"
+      height="500"
+      title="html course by thapatechnical"
+      loading="lazy"
+    />
+    <br />
+    <hr />
+    <!-- on hovering the cursor on the image, we can see the title -->
+    <!-- on using loading="lazy", the image does not load untill you reach that page  -->
+    <!-- content of alt alt attribute is shown when the image does not load -->
+    <img src="image" alt="this is an image" />
+    <br />
+    <hr />
+
+    <!-- to make the image responsive, set width=100% height=auto -->
+    <h2>responsive image</h2>
+    <img
+      src="../images/html.png"
+      alt="html course thumbnail"
+      width="100%"
+      height="auto"
+    />
+    <br />
+    <hr />
+
+    <!-- we can make an image as a link -->
+    <h2>link image</h2>
+    <a href="https://www.thapatechnical.com/" target="_blank">
+      <img src="../images/html.png" alt="" width="300" , height="200" />
+    </a>
+    <br />
+    <hr />
+
+    <!-- img tag with map tage, in this, we can specify that how much portion of an image is a link -->
+    <h2>img tag with map tag</h2>
+    <img
+      src="../images/html.png"
+      alt="img with map"
+      width="500"
+      height="350"
+      usemap="#map_tag"
+    />
+    <map name="map_tag">
+      <area
+        shape="rect"
+        coords="0,0,125,150"
+        href="https://www.thapatechnical.com/"
+        target="_blank"
+        alt="thapatechnical website"
+      />
+      <!-- now the upper left part of the image will act like a link -->
+      <!-- we can use shape="circle" and shape="poly" -->
+    </map>
+    <br />
+    <hr />
+
+    <!-- *------------------------------------- -->
+    <!--* ADVANCED : HTML IMAGE TAG -->
+    <!-- *---------------------------------------- -->
+    <!-- we can update image at a perticular pixel -->
+    <h2>Advance HTML Tag</h2>
+    <img
+      src="../images/html.png"
+      alt="Responsive Image"
+      srcset="
+        ../images/html-400.jpg   400w,
+        ../images/html-600.jpg   600w,
+        ../images/html-800.jpg   800w,
+        ../images/html-1000.jpg 1000w
+      "
+      sizes="(max-width: 600px) 400px,
+            (max-width: 800px) 600px,
+            (max-width: 1100px) 1000px,
+            1200px"
+    />
+    <br />
+    <hr />
+  </body>
+</html>
+<!--TODO  Deprecated Tags of HTML Images  -->
+<!-- align, border, hspace, vspace -->
+
+<!--* What Not To Do  -->
+<!-- ❌ <img alt="image" src="penguin.jpg" />  -->
+<!-- ✅<img  alt="A Rockhopper Penguin standing on a beach."  src="penguin.jpg" /> -->
+
+<!-- *------------------------------------- -->
+<!--* INTERVIEW QUESTIONS: HTML IMAGE TAG  
+<!-- *---------------------------------------- -->
+
+<!--? 1: How would you make an image responsive using the width attribute? -->
+<!-- You can set the width attribute to a percentage value (e.g., width="100%") to make the image adjust its width based on the available space. -->
+
+<!--? 2: How do you create an image link using the <img> tag? -->
+<!-- You wrap the <img> tag with an anchor <a> tag and provide the href attribute in the <a> tag. -->
+
+<!--? 3: What's the difference between relative and absolute URLs in the href attribute? -->
+<!-- Relative URLs are URLs that are relative to the current page's URL. Absolute
+URLs are complete URLs, including the protocol (http/https) and domain. -->
+
+<!--? 4: Why is providing descriptive alt text for images important? It improves -->
+<!-- accessibility for users with visual impairments and helps search engines 
+understand image content. -->

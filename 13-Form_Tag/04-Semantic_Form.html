@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+      html {
+        font-family: "jost", sans-serif;
+        background-color: #efefef;
+      }
+      h1 {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!--? Semantic HTML5 Form Elements:
+Semantic HTML5 form elements like <label>, <fieldset>, and <legend> provide better structure and accessibility to forms.
+
+<label>: Associates text labels with form elements for better user understanding.
+<fieldset>: Groups related form elements together, creating a visual and semantic grouping.
+<legend>: Provides a caption or title for the <fieldset> element. -->
+
+    <h2>Semantic HTML5 Form Elemets</h2>
+    <br />
+    <h4>Fill the Form for Cricket Practice</h4>
+
+    <form action="/submit" method="post">
+      <!-- add <fieldset> </fieldset> -->
+      <fieldset>
+        <legend>Personal Info</legend>
+        <br />
+        <div>
+          <label for="username">Name: </label>
+          <input type="text" id="username" />
+        </div>
+        <br />
+        <div>
+          <label for="email">Email: </label>
+          <input type="email" id="email" />
+        </div>
+        <br />
+        <div>
+          <label for="number">Phone Number: </label>
+          <input type="number" id="number" />
+        </div>
+        <br />
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Cricket Time</legend>
+        <h5>Groung opens 06:00 to 18:00</h5>
+        <div>
+          <label for="sportsTime">Sunday: </label>
+          <input type="time" name="sportsTime" />
+        </div>
+        <br />
+        <div>
+          <label for="sportsTime">tuesday: </label>
+          <input type="time" name="sportsTime" />
+        </div>
+        <br />
+        <div>
+          <label for="sportsTime">Friday: </label>
+          <input type="time" name="sportsTime" />
+        </div>
+        <br />
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
