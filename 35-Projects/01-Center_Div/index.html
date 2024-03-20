@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        background-color: #191825;
+
+        /* 2nd way flexbox  */
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+
+        /* 3rd way grid  */
+        /* display: grid;
+        place-items: center; */
+
+        /* 4th way grid  */
+        /* display: grid;
+        justify-content: center;
+        align-items: center; */
+
+        /* 5th way flex and margin, margin will be auto in child element  */
+        /* display: flex; */
+      }
+
+      .child {
+        width: 400px;
+        height: 400px;
+        background-color: #865dff;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 20px;
+        /* text center  */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* 1st way position */
+        /* top: 50% moves to 50% from top and left: 50% moves to 50% from left */
+        /* transform moves it to left and top respectively about 50% of its width  */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        /* for 5th way  */
+        /* margin: auto; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="child">center text</div>
+  </body>
+</html>

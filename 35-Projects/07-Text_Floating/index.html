@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Bungee Spice", sans-serif;
+      }
+      body {
+        height: 100vh;
+        background-color: rgb(228, 181, 96);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        font-size: 60px;
+        text-shadow: -3px 10px 10px rgb(118, 59, 17);
+        color: rgb(118, 59, 17);
+        text-transform: uppercase;
+
+        animation: floating 1s linear infinite alternate;
+      }
+      @keyframes floating {
+        0% {
+          rotate: 20deg;
+        }
+        50% {
+          rotate: 0deg;
+        }
+        100% {
+          rotate: -20deg;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hack - Tech</h1>
+  </body>
+</html>

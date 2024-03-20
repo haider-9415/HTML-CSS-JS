@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        background: rgb(53, 53, 53);
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        background-color: #191825;
+
+        & .loader {
+          width: 18rem;
+          aspect-ratio: 1;
+          background-color: #865dff;
+          border-radius: 50%;
+          position: relative;
+          animation: Loader 2s linear infinite;
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 17rem;
+            aspect-ratio: 1;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            background-color: #191825;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            width: 5rem;
+            aspect-ratio: 1;
+            top: -2.5rem;
+            left: 8.5rem;
+            border-radius: 50%;
+            background-color: #865dff;
+            box-shadow: 0 0 1rem #865dff, 0 0 1.5rem #865dff, 0 0 2rem #865dff,
+              0 0 2.5rem #865dff, 0 0 3rem #865dff;
+          }
+        }
+      }
+      @keyframes Loader {
+        100% {
+          rotate: -360deg;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader"></div>
+  </body>
+</html>
